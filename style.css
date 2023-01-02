@@ -1,0 +1,118 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background: url('img/Ellipse13.png') no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 700px){
+    body{
+        flex-direction: column;
+    }
+}
+
+.logo__area{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__area img{
+    width: 120px;
+    height: auto;
+}
+
+.features-icons{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    padding: 0 80px;
+}
+
+@media screen and (max-width: 600px){
+
+}
+
+.feature-icon{
+    display: flex;
+    width: 100px;
+    padding: 20px;
+    height: 100px;
+    margin: 30px 15px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: .2s ease-in;
+    background: rgba(255, 255, 255, 0.877);
+}
+
+.feature-icon:hover{
+    box-shadow: 2px 2px 32px 16px rgba(0, 0, 0, .1);
+}
+
+.feature-icon-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+}
+
+.feature-icon-content span{
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #585656;
+    font-size: .8rem;
+}
+
+.feature-icon img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.features-content{
+    box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, .09);
+    height: fit-content;
+    border-radius: 40px;
+    background: rgba(255,255, 255, .3);
+    backdrop-filter: blur(5px);
+    padding: 50px;
+    height: 250px;
+    width: 27em;
+}
+
+.features-text{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    flex-direction: column;
+    width: 40vw;
+    height: auto;
+}
+
+.title{
+    color: #2d8cff;
+}
+
+.text{
+    line-height: 30px;
+    color:rgb(54, 53, 53)
+}
